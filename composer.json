@@ -1,0 +1,20 @@
+{
+    "name": "vox/vox-signature-cloud",
+    "description": "library",
+    "type": "library",
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Railson Luna",
+            "email": "railson_luna@hotmail.com"
+        }
+    ],
+    "autoload": {
+      "psr-4": {
+        "Vox\\VoxSignatureCloud\\": "src"
+      }
+    }
+}

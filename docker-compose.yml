@@ -1,0 +1,21 @@
+version: '3'
+
+services:
+  app:
+    container_name: vox-signature-cloud-app
+    build: ./docker/app
+    volumes:
+      - ./:/var/www/
+    links:
+      - nginx
+    depends_on:
+      - nginx
+  nginx:
+    container_name: vox-signature-cloud-nginx
+    build: ./docker/nginx
+    ports:
+      - 8081:80
+      - 8083:443
+    volumes:
+      - ./docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+      - ./:/var/www/
