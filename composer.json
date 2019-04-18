@@ -1,5 +1,5 @@
 {
-    "name": "vox/vox-signature-cloud",
+    "name": "railson/vox-signature-cloud",
     "description": "library",
     "type": "library",
     "require": {
