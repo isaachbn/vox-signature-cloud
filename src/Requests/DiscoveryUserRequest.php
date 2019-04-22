@@ -30,7 +30,7 @@ class DiscoveryUserRequest extends AbstractRequest
         $parameters['scope'] = $scope;
 
         $response = $this->sendGet(
-           $this->client->getUrl()."/certificate",
+           $this->client->getUrl()."/api/certificate",
            $parameters
        );
 

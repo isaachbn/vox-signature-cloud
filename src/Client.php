@@ -8,11 +8,11 @@ class Client
 
     /**
      * Client constructor.
-     * @param array $config
+     * @param string $uri
      */
-    public function __construct(array $config = [])
+    public function __construct(string $uri = 'localhost:8080')
     {
-        $this->url =  $config['url'] ?? 'http://localhost/certificate?document=57641729851&scope=vault_id';
+        $this->url = $uri;
     }
 
     /**

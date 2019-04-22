@@ -23,7 +23,7 @@ class ScopeRequest extends AbstractRequest
     public function call()
     {
         $response = $this->sendGet(
-            $this->client->getUrl()."/scope"
+            $this->client->getUrl()."/api/scope"
         );
 
         return (array) $response;

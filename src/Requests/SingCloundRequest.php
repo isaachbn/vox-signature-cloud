@@ -35,7 +35,7 @@ class SingCloundRequest extends AbstractRequest
         $parameters['scope'] = $scope;
 
         $response = $this->sendPost(
-            $this->client->getUrl()."/signature",
+            $this->client->getUrl()."/api/signature",
             $parameters
         );
 

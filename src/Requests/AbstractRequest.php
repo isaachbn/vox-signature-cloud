@@ -25,7 +25,7 @@ abstract class AbstractRequest
         $response = json_decode(curl_exec($curl));
         $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-        if ($statusCode !== 200) {
+        if (!in_array($statusCode, [200, 201])) {
             throw new SignatureCloudException(
                 $response->detail->message,
                 $response->detail->code,
@@ -59,7 +59,7 @@ abstract class AbstractRequest
 
         $statusCode = curl_getinfo($curl, CURLINFO_HTTP_CODE);
 
-        if ($statusCode !== 200) {
+        if (!in_array($statusCode, [200, 201])) {
             throw new SignatureCloudException(
                 $response->detail->message,
                 $response->detail->code,
