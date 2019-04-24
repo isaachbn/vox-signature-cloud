@@ -22,7 +22,7 @@ $discoveryUserRequest =  new DiscoveryUserRequest($client);
 $discoveryUserRequest->call('vault', ['document' => '57641729851']);
 
 $singCloundRequest =  new SingCloundRequest($client);
-$singCloundRequest->call('vault_id', []);
+$singCloundRequest->call('vault', []);
 
 $scopeRequest = new ScopeRequest($client);
 $scopeRequest->call();
