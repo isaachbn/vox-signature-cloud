@@ -3,10 +3,12 @@
 Lib para conexao com a API gateway-vox-signature.
 
 ## Getting Started
-composer require railson/vox-signature-cloud
+```php
+composer require railson/vox-signature-cloud 
+```
 
 
-### Dependeces
+### Dependencies
 
 | Name | Version|
 | --- | --- |
@@ -22,7 +24,7 @@ $discoveryUserRequest =  new DiscoveryUserRequest($client);
 $discoveryUserRequest->call('vault', ['document' => '57641729851']);
 
 $singCloundRequest =  new SingCloundRequest($client);
-$singCloundRequest->call('vault_id', []);
+$singCloundRequest->call('vault', []);
 
 $scopeRequest = new ScopeRequest($client);
 $scopeRequest->call();
