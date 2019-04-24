@@ -6,7 +6,7 @@ Lib para conexao com a API gateway-vox-signature.
 composer require railson/vox-signature-cloud
 
 
-### Dependeces
+### Dependencies
 
 | Name | Version|
 | --- | --- |
