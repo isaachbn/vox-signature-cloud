@@ -3,7 +3,9 @@
 Lib para conexao com a API gateway-vox-signature.
 
 ## Getting Started
-```php composer require railson/vox-signature-cloud ```
+```php
+composer require railson/vox-signature-cloud 
+```
 
 
 ### Dependencies
