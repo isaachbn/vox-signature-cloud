@@ -13,7 +13,6 @@ composer require railson/vox-signature-cloud
 | Name | Version|
 | --- | --- |
 | php | \>= 7.1 |
-| guzzlehttp/guzzle | ^6.3 |
 
 ## Examples
 
